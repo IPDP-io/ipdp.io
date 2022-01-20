@@ -61,28 +61,49 @@
           
           </h1>
           <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-            We're a white label NFT ticket platform for content creators.
+            We're a white label NFT ticket platform for content creators with +100k fans or followers.
            </p>
 
-          <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+          <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" action="https://formspree.io/f/mlezgpnp" method="POST">
             <div class="mb-4">
               <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
-                Signup for our newsletter
+                Signup if you're a content creator who wants beta access
               </label>
               <input
                 class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 id="emailaddress"
-                type="text"
+                type="email"
                 placeholder="kris@ipdp.io"
+                name="_replyto"
               />
             </div>
+            <label for="platform">Your most popular platform</label>
+              <select name="department" id="department" required="">
+                 <option value="" selected="" disabled="">Select</option>
+                 <option value="Tiktok">TikTok</option>
+                 <option value="YouTube">YouTube</option>
+                 <option value="Instgram">Instagram</option>
+                 <option value="Udemy">Udemy</option>
+                 <option value="Substack">Substack</option>
+                 <option value="OnlyFans">OF</option>
+                 <option value="Personal Vlog">Personal Vlog/Blog</option>
+              </select>
+              <br />
+              <label for="platform">And your username there:</label>
+              <input
+                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                id="platformusername"
+                type="text"
+                placeholder="@ipdb"
+                name="platformuserame"
+              />
 
             <div class="flex items-center justify-between pt-4">
               <button
                 class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                type="button"
+                type="submit"
               >
-                Sign Up
+                Apply
               </button>
             </div>
           </form>
