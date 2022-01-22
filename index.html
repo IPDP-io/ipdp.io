@@ -83,51 +83,53 @@
           </p>
 
           <form
-            class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"
+            class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-4 pb-8 mb-4"
             action="https://formspree.io/f/mlezgpnp"
             method="POST"
           >
-            <div class="mb-4">
+            <div class="mb-5">
               <label
-                class="block text-blue-300 py-2 font-bold mb-2"
+                class="block text-blue-300 py-2 pb-3 font-bold"
                 for="emailaddress"
               >
                 Signup if you're a content creator who wants beta access
               </label>
-              <br />
               <label for="platform"
                 >Due to demand, please make sure you have +100k followers</label
               >
               <input
-                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out mt-5"
                 id="emailaddress"
                 type="email"
                 placeholder="kris@ipdp.io"
                 name="_replyto"
               />
             </div>
-            <label for="platform">Your most popular platform</label>
-            <select name="department" id="department" required="">
-              <option value="" selected="" disabled="">Select</option>
-              <option value="Tiktok">TikTok</option>
-              <option value="YouTube">YouTube</option>
-              <option value="Instgram">Instagram</option>
-              <option value="Udemy">Udemy</option>
-              <option value="Substack">Substack</option>
-              <option value="OnlyFans">OF</option>
-              <option value="Personal Vlog">Personal Vlog/Blog</option>
-            </select>
-            <br />
+            <div class="mb-3">
+              <label for="platform" class="mr-1"
+                >Your most popular platform</label
+              >
+              <select name="department" id="department" required="">
+                <option value="" selected="" disabled="">Select</option>
+                <option value="Tiktok">TikTok</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Instgram">Instagram</option>
+                <option value="Udemy">Udemy</option>
+                <option value="Substack">Substack</option>
+                <option value="OnlyFans">OF</option>
+                <option value="Personal Vlog">Personal Vlog/Blog</option>
+              </select>
+            </div>
             <label for="platform">And your username there:</label>
             <input
-              class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out mt-5"
               id="platformusername"
               type="text"
               placeholder="@ipdb"
               name="platformuserame"
             />
 
-            <div class="flex items-center justify-between pt-4">
+            <div class="flex items-center justify-between pt-4 mt-3">
               <button
                 class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="submit"
